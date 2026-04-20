@@ -103,9 +103,11 @@ function App() {
   }, [textoDigitado, textoAtual])
 
   const segundosPassados = tempoSelecionado - tempoRestante
-  const minutosPassados = segundosPassados > 0 ? segundosPassados / 60 : 1 / 60
+  const minutosPassados = segundosPassados >= 3 ? segundosPassados / 60 : 3 / 60
   const ppm = Math.max(0, Math.round((caracteresCorretos / 5) / minutosPassados))
   const precisao = totalDigitado > 0 ? Math.round((caracteresCorretos / totalDigitado) * 100) : 100
+  const precisaoClasse = precisao >= 90 ? 'precisao-boa' : precisao >= 75 ? 'precisao-media' : 'precisao'
+  const tempoUrgente = tempoRestante <= 10 && iniciado && !finalizado
 
   useEffect(() => {
     if (!iniciado || finalizado) return
@@ -338,14 +340,14 @@ function App() {
 
           <div className="metrica">
             <span>Precisão:</span>
-            <strong className="precisao">{precisao}%</strong>
+            <strong className={precisaoClasse}>{precisao}%</strong>
           </div>
 
           <div className="separador" />
 
           <div className="metrica">
             <span>Tempo:</span>
-            <strong className="tempo">0:{String(tempoRestante).padStart(2, '0')}</strong>
+            <strong className={tempoUrgente ? 'tempo urgente' : 'tempo'}>0:{String(tempoRestante).padStart(2, '0')}</strong>
           </div>
         </div>
 
