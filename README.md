@@ -1,16 +1,15 @@
-# React + Vite
+Teste de Digitação
+Aplicação para testar e melhorar a velocidade de digitação, com métricas em tempo real e registro de melhor marca.
+[https://teste-digita-o.vercel.app/]
+## Funcionalidades
+Medição de velocidade em PPM (palavras por minuto)
+Precisão dinâmica com feedback visual por cor
+Timer com alerta visual nos últimos 10 segundos
+Três níveis de dificuldade: Fácil, Médio e Difícil
+Dois modos: Cronometrado (60s) e Passagem
+Tela de resultado com estatísticas detalhadas
+Registro de melhor marca salvo no localStorage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologias
+React 19
+Vite
