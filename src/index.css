@@ -120,8 +120,26 @@ textarea {
   color: var(--red);
 }
 
+.metrica .precisao-media {
+  color: var(--yellow);
+}
+
+.metrica .precisao-boa {
+  color: var(--green);
+}
+
 .metrica .tempo {
   color: var(--yellow);
+}
+
+.metrica .tempo.urgente {
+  color: var(--red);
+  animation: piscar 0.6s ease infinite alternate;
+}
+
+@keyframes piscar {
+  from { opacity: 1; }
+  to { opacity: 0.4; }
 }
 
 .separador {
