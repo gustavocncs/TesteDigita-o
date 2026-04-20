@@ -1,4 +1,5 @@
-Teste de Digitação
+## Teste de Digitação
+
 Aplicação para testar e melhorar a velocidade de digitação, com métricas em tempo real e registro de melhor marca.
 [https://teste-digita-o.vercel.app/]
 ## Funcionalidades
